@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="h-2/5 w-3/5 lg:w-2/5 border-2 bg-white flex justify-center items-center">
+        <div>
+            <h4 class="text-xl font-bold uppercase">Stop Watch</h4>
+            <div class="flex">
+                <table class="border  border-separate border-spacing-5 border-slate-500">
+                    <tbody>
+                        <tr>
+                            <td id="hour" class="border border-slate-600 p lg:p-3 font-bold text-2xl">00</td>
+                            <td id="min" class="border border-slate-600 p-1 lg:p-3 font-bold text-2xl">00</td>
+                            <td id="sec" class="border border-slate-600 p-1 lg:p-3 font-bold text-2xl">00</td>
+                            <td id="count" class="border border-slate-600 p-1 lg:p-3 font-bold text-2xl">00</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <button onclick="start()" class="border-2 px-2 lg:px-5 py-1 
+                bg-purple-700 
+                text-white 
+                uppercase
+                font-medium">Start</button>
+            <button onclick="reset()" class="border-2 px-2 lg:px-5 py-1 
+                bg-purple-700 
+                text-white 
+                uppercase
+                font-medium">Reset</button>
+            <button onclick="stop()" class="border-2 
+                px-2 
+                lg:px-5
+                py-1  
+                bg-purple-700
+                text-white
+                uppercase 
+                font-medium">Stop</button>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
